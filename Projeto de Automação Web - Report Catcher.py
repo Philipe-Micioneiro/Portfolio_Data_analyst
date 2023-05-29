@@ -13,7 +13,7 @@ from getpass import getpass
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common import exceptions as ex
-
+from defs import *
 
 #Para começar, irei perguntar para o usuario qual relatório ele(a) quer pegar.
 while True:
@@ -43,8 +43,8 @@ senha = input(' Agora a senha para que eu possa pegar para você! \n mas fique t
 #Agora é hora de entrar no site dos relatorios e baixar aquilo que o cliente quis.
 
 #ob = Screenshot.Screenshot()
-api = '7a3bdf8d9c18c5e69bcfdb9c602971c0'
-url = 'https://reportcenterv10zetaapps.mum1.zetaapps.in/?mode=standalone&catalogRootId=8563943054013428244&ifi=294029#/home'
+api = 'Chave_api'
+url = '##################'
 
 print('agora é comigo, vou abrir seu navegador ok? mas pode me minimizar. Meu tempo de processamento é 5-7 minutos, dependo da sua banda larga!')
 #SEGUNDA FASE: entrando no site
