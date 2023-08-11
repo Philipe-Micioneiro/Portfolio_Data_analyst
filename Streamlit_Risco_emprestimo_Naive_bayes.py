@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 from sklearn.naive_bayes import GaussianNB
 from sklearn.preprocessing import LabelEncoder
-
+#IMPORTANTE: PARA RODAR ESSE CODIGO, BASTA ABRIR O TERMINAL E RODAR streamlit run Streamlit_Risco_emprestimo_Naive_bayes.py
 with open('credit.pkl','rb') as f:
     x_credit_treinamento,y_credit_treinamento,x_credit_test,y_credit_test = pickle.load(f)
 
