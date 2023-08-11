@@ -19,7 +19,7 @@ st.subheader('Informações dos dados')
 #nome usuario
 user_input = st.sidebar.text_input('Digite seu nome')
 
-#def pre_processing():
+# PREPROCESSING DA BASE ORIGINAL para a criação da tabela de probabilidade
 base_risco_credito = pd.read_csv('risco_credito.csv')
 x_risco_credito = base_risco_credito.iloc[:,0:4].values
 y_risco_credito = base_risco_credito.iloc[:,4].values
@@ -31,7 +31,7 @@ x_risco_credito[:, 0] = label_encoder_historia.fit_transform(x_risco_credito[:, 
 x_risco_credito[:, 1] = label_encoder_divida.fit_transform(x_risco_credito[:, 1])
 x_risco_credito[:, 2] = label_encoder_garantia.fit_transform(x_risco_credito[:, 2])
 x_risco_credito[:, 3] = label_encoder_renda.fit_transform(x_risco_credito[:, 3])
-    #return x_risco_credito
+   
 
 
 def previsao_nb(lista):
