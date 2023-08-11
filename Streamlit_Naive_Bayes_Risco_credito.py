@@ -5,6 +5,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import confusion_matrix,accuracy_score
 
+#IMPORTANTE! : Para rodar esse codigo, digitar no terminal : streamlit run Streamlit_Naive_Bayes_Risco_credito.py
 
 #Projeto de disponibilização do modelo de ML para uso.
 #O objetivo dessa aplicação é classificar se um cliente apresenta um risco de crédito Alto, Moderado ou Baixo. Quis deixar que a ação tomada após a previsão ficasse a cargo do usuario.
