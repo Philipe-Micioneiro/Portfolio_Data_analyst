@@ -63,7 +63,9 @@ def valor_previsto (idade):
     Y = abs(Y)
     Y = (f'R$ {Y:.2f}')
     return Y
-try:
+
+if idade <=0:
+    st.error('preencha uma idade valida')
+else:
     valor = st.write('o valor a ser pago é de: ', valor_previsto(idade))
-except:
-    st.error('preencha o campo "idade" ')
+
