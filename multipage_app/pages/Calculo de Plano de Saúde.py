@@ -7,7 +7,7 @@ from sklearn.linear_model import LinearRegression
 import streamlit as st
 
 #IMPORTANTE : RODAR O CODIGO :  streamlit run Streamlit_Regressao_Linear_simples_Plano_Saude.py
-st.set_page_config(page_title= Plano de Saúde')
+st.set_page_config(page_title= 'Plano de Saúde')
 st.write('Projeto : Calculo de contratação de planos de saúde')
 st.write('Objetivo : Validar que o valor cobrado é justo, bem como saber onde estariamos ganhando a mais, ou perdendo demais. O algoritmo também tem o poder de saber valores futuros com a regressão.')
 st.write('Algoritmo utilizado: Linear Regression')
