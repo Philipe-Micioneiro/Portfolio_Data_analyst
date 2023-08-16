@@ -63,5 +63,5 @@ def valor_previsto (idade):
     Y = (f'R$ {Y:.2f}')
     return Y
 
-valor = st.write('o valor do plano do cliente é de: ', valor_previsto(idade))
+valor = st.write('o valor a ser pago é de: ', valor_previsto(idade))
 
