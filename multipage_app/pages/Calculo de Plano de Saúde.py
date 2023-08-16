@@ -13,7 +13,7 @@ st.write('Plano de Saúde')
 #cabeçalho
 st.subheader('Projeto de Regressão linear.\n O objetivo desse Projeto é descobrir o custo de um plano de saude mediante a idade do cliente')
 #Mostrar o grafico da planilha original
-base_plano_saude = pd.read_csv(r"C:\Users\luis.bezerra.ext\Desktop\Machine Learning\Projetos de Machine Learning\multipage_app\plano_saude.csv")
+base_plano_saude = pd.read_csv(r"multipage_app/plano_saude.csv")
 
 
 
