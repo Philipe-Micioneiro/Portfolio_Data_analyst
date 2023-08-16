@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 
 st.set_page_config(page_title='Risco Emprestimo')
 
-with open('credit.pkl','rb') as f:
+with open(r'multipage_app/credit.pkl','rb') as f:
     x_credit_treinamento,y_credit_treinamento,x_credit_test,y_credit_test = pickle.load(f)
 
 
@@ -42,7 +42,7 @@ def get_user_data():
     features = pd.DataFrame(user_data, index=[0])
 
 
-    dados_usuario = features.to_csv('dados_usuario.csv', index=False)
+    dados_usuario = features.to_csv(r'multipage_app/dados_usuario.csv', index=False)
 
 
     return features
@@ -51,7 +51,7 @@ user_input = st.sidebar.text_input('Nome:')
 
 try:
     user_input_variables = get_user_data()
-    dado_novo = pd.read_csv('dados_usuario.csv')
+    dado_novo = pd.read_csv(r'multipage_app/dados_usuario.csv')
 
     lista = dado_novo.values.tolist()
 
