@@ -42,7 +42,7 @@ def get_user_data():
     features = pd.DataFrame(user_data, index=[0])
 
 
-    dados_usuario = features.to_excel('dados_usuario.xlsx', index=False)
+    dados_usuario = features.to_csv('dados_usuario.csv', index=False)
 
 
     return features
@@ -51,7 +51,7 @@ user_input = st.sidebar.text_input('Nome:')
 
 try:
     user_input_variables = get_user_data()
-    dado_novo = pd.read_excel('dados_usuario.xlsx')
+    dado_novo = pd.read_csv('dados_usuario.csv')
 
     lista = dado_novo.values.tolist()
 
