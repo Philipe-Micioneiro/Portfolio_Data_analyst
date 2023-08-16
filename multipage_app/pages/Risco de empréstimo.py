@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 from sklearn.naive_bayes import GaussianNB
 from sklearn.preprocessing import LabelEncoder
-# Projeto : Risco de Emprestimo
+st.write ('Projeto : Risco de Emprestimo')
 #Objetivo : Por caracteristicas do solicitante, descobrir se a taxa de risco de emprestimo é alta ou baixa.
 #ALGORITMO : NAIVE BAYES
 #accuracy do modelo: 96,3%
