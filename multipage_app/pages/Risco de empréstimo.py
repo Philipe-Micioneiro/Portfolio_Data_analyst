@@ -16,6 +16,7 @@ from sklearn.preprocessing import LabelEncoder
 
 st.set_page_config(page_title='Risco Emprestimo')
 
+
 with open(r'multipage_app/credit.pkl','rb') as f:
     x_credit_treinamento,y_credit_treinamento,x_credit_test,y_credit_test = pickle.load(f)
 
@@ -33,7 +34,8 @@ def previsao_nb(lista):
     return previsao
 
 #titulo
-st.write('Novos dados')
+st.write('Projeto: Risco de emprestimo' /n
+        Objetivo:)
 
 def get_user_data():
     Idade = st.sidebar.text_input('Idade')
