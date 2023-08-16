@@ -5,18 +5,15 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.preprocessing import LabelEncoder
 
 
-#ALGORITMO : NAIVE BAYES
-#accuracy do modelo: 96,3%
-
-
-
-
 #IMPORTANTE: PARA RODAR ESSE CODIGO, BASTA ABRIR O TERMINAL E RODAR streamlit run Streamlit_Risco_emprestimo_Naive_bayes.py
 
 st.set_page_config(page_title='Risco Emprestimo')
 
 st.write('Projeto : Risco de Emprestimo')
 st.write('Objetivo : Por caracteristicas do solicitante, descobrir se a taxa de risco de emprestimo é alta ou baixa.')
+st.write('Algoritmo utilizado: NAIVE BAYES')
+st.write('accuracy do modelo: 96,3%')
+
 
 with open(r'multipage_app/credit.pkl','rb') as f:
     x_credit_treinamento,y_credit_treinamento,x_credit_test,y_credit_test = pickle.load(f)
