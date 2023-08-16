@@ -60,7 +60,9 @@ def valor_previsto (idade):
     B = regressor_plano_saude.coef_
     Y = A + B * idade
     Y = float(Y)
-    Y = abs(Y)
+    if Y < 0:
+        st.error('Por favor preencha uma idade valida)
+    else:
     Y = (f'R$ {Y:.2f}')
     return Y
 
