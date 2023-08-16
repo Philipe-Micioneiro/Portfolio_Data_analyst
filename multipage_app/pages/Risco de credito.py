@@ -18,7 +18,7 @@ st.subheader('Informações dos dados')
 #nome usuario
 user_input = st.sidebar.text_input('Digite seu nome')
 
-base_risco_credito = pd.read_csv('risco_credito.csv')
+base_risco_credito = pd.read_csv(r'multipage_app/risco_credito.csv')
 x_risco_credito = base_risco_credito.iloc[:,0:4].values
 y_risco_credito = base_risco_credito.iloc[:,4].values
 label_encoder_historia = LabelEncoder()
@@ -94,7 +94,7 @@ st.write('Nome do Usuario:',user_input)
 st.write(user_input_variables)
 
 #novos dados submetidos
-dado_novo = pd.read_excel('dados_usuario.xlsx')
+dado_novo = pd.read_excel(r'multipage_app/dados_usuario.xlsx')
 
 dado_novo['Historia'] = dado_novo['Historia'].astype('object')
 dado_novo['Divida'] = dado_novo['Divida'].astype('object')
@@ -103,7 +103,7 @@ dado_novo['Renda'] = dado_novo['Renda'].astype('object')
 
 lista = dado_novo.values.tolist()
 
-#risco_credito = pd.read_csv('risco_credito.csv')
+
 previsoes = previsao_nb(lista)
 previsoes ="".join(map(str,previsoes)).upper()
 
