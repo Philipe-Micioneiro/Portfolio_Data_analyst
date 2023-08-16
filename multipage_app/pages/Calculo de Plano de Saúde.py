@@ -59,7 +59,8 @@ def valor_previsto (idade):
     A = regressor_plano_saude.intercept_
     B = regressor_plano_saude.coef_
     Y = A + B * idade
-    Y = abs(float(Y))
+    Y = float(Y)
+    Y = abs(Y)
     Y = (f'R$ {Y:.2f}')
     return Y
 
