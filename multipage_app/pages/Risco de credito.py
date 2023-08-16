@@ -8,7 +8,7 @@ from sklearn.metrics import confusion_matrix,accuracy_score
 st.set_page_config(page_title='Risco crédito')
 
 #O objetivo dessa aplicação é classificar se um cliente apresenta um risco de crédito Alto, Moderado ou Baixo. Quis deixar que a ação tomada após a previsão ficasse a cargo do usuario.
-st.write('Projeto : Risco de Emprestimo')
+st.write('Projeto : Risco de disponibilização de crédito')
 st.write('O objetivo dessa aplicação é classificar se um cliente apresenta um risco de crédito Alto, Moderado ou Baixo. Quis deixar que a ação tomada após a previsão ficasse a cargo do usuario.')
 st.write('Algoritmo utilizado: NAIVE BAYES')
 st.write('precisão e assertividade do modelo: 98,1%')
