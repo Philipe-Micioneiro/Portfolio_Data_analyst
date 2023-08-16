@@ -61,7 +61,7 @@ def valor_previsto (idade):
     Y = A + B * idade
     Y = float(Y)
     if Y < 0:
-        st.error('Por favor preencha uma idade valida)
+        st.error('Por favor preencha uma idade valida')
     else:
     Y = (f'R$ {Y:.2f}')
     return Y
