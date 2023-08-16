@@ -53,7 +53,7 @@ def graf():
 
 graf()
 idade = st.number_input('Insira a sua idade',format='%i',max_value=115,min_value=0)
-
+st.error('preencha o campo "idade" ')
 def valor_previsto (idade):
 
     A = regressor_plano_saude.intercept_
