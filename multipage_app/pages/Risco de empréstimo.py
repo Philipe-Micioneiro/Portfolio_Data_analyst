@@ -4,8 +4,7 @@ import pandas as pd
 from sklearn.naive_bayes import GaussianNB
 from sklearn.preprocessing import LabelEncoder
 
-st.write('Projeto : Risco de Emprestimo')
-st.write('Objetivo : Por caracteristicas do solicitante, descobrir se a taxa de risco de emprestimo é alta ou baixa.')
+
 #ALGORITMO : NAIVE BAYES
 #accuracy do modelo: 96,3%
 
@@ -16,6 +15,8 @@ st.write('Objetivo : Por caracteristicas do solicitante, descobrir se a taxa de 
 
 st.set_page_config(page_title='Risco Emprestimo')
 
+st.write('Projeto : Risco de Emprestimo')
+st.write('Objetivo : Por caracteristicas do solicitante, descobrir se a taxa de risco de emprestimo é alta ou baixa.')
 
 with open(r'multipage_app/credit.pkl','rb') as f:
     x_credit_treinamento,y_credit_treinamento,x_credit_test,y_credit_test = pickle.load(f)
