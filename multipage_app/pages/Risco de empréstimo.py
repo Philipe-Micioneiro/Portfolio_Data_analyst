@@ -33,9 +33,7 @@ def previsao_nb(lista):
             return ('Baixo risco de comprometimento')
     return previsao
 
-#titulo
-st.write('Projeto: Risco de emprestimo' /n
-        Objetivo:)
+
 
 def get_user_data():
     Idade = st.sidebar.text_input('Idade')
