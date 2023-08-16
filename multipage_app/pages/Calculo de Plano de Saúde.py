@@ -67,7 +67,7 @@ def valor_previsto (idade):
 if idade <=0:
     st.error('preencha uma idade valida')
 elif idade <=10:
-    valor = st.write('o valor a ser pago é de: R$ 300,00')
+    valor = st.write('o Plano para crianças de um a dez anos é de: R$ 300,00')
 else:
     valor = st.write('o valor a ser pago é de: ', valor_previsto(idade))
 
