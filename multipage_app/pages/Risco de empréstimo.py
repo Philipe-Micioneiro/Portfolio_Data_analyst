@@ -11,8 +11,8 @@ st.set_page_config(page_title='Risco Emprestimo')
 
 st.write('Projeto : Risco de Emprestimo')
 st.write('Objetivo : Por caracteristicas do solicitante, descobrir se a taxa de risco de emprestimo é alta ou baixa.')
-st.write('Algoritmo utilizado: NAIVE BAYES')
-st.write('precisão e assertividade do modelo: 96,3%')
+st.write('Algoritmo utilizado: DECISION TREE')
+st.write('precisão e assertividade do modelo: 98,4%')
 
 
 with open(r'multipage_app/credit.pkl','rb') as f:
